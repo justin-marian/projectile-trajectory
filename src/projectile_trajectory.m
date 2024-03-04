@@ -201,7 +201,7 @@ function plot_trajectory_animation(x, y, vx, vy)
     %   - vy: Velocity component along y-axis (m/s)
     
     % Create a figure with gradient sky background
-    figure('Color', [0.7, 0.85, 1]);
+    figure('Position', [100, 100, 800, 600], 'Color', [0.7, 0.85, 1]);
     xlabel('Horizontal Position (km)');
     ylabel('Vertical Position (km)');
     grid;
