@@ -3,6 +3,11 @@
 # Set correct permissions on directory
 chmod 0700 /run/user/1000/
 
+BASE_DIR=../
+OUTPUT_DIR="$BASE_DIR/output"
+IMAGES_DIR="$OUTPUT_DIR/images"
+LOG_FILE="$OUTPUT_DIR/log.txt"
+
 # Define colors
 RED='\033[0;31m'
 BLUE='\033[0;34m'
@@ -16,15 +21,15 @@ display_instructions() {
     echo -e "         This script will run tests to simulate the trajectory of a projectile.     "
     echo -e "      ${RED}Please ensure that Octave is installed and accessible from the command line.${NC}"
     echo -e "  The script will generate random initial velocity and launch angle for each test.  "
-    echo -e "              After running the tests, you will have the option:                    "
-    echo -e "                   ${GREEN}execute test${NC}, ${BLUE}clean up log${NC}, or ${RED}exit${NC}."
+    echo -e "               After running the tests, you will have the option:                    "
+    echo -e "                       ${GREEN}execute test${NC}, ${BLUE}clean up log${NC}, or ${RED}exit${NC}."
     echo -e "===================================================================================="
     echo
 }
 
 run_test() {
     num_tests=1
-    mkdir -p output
+    mkdir -p ../output
 
     echo -e "${GREEN}Running test...${NC}"
 
@@ -39,15 +44,17 @@ run_test() {
         # Rename the resulting PNG images with an index to identify the test
         if [[ $i != 1 ]]; then
             echo -e "${GREEN}Running test $i${NC}"
-            mv output/images/velocity_position_curve.png output/images/velocity_position_curve_$i.png
-            mv output/images/trajectory_animation.png output/images/trajectory_animation_$i.png
+            mv ${IMAGES_DIR}/velocity_position_curve.png \
+                ${IMAGES_DIR}/velocity_position_curve_$i.png
+            mv ${IMAGES_DIR}/trajectory_animation.png \
+                ${IMAGES_DIR}/trajectory_animation_$i.png
         fi
     done
 }
 
 clean_log() {
     echo -e "${BLUE}Cleaning up log file...${NC}"
-    echo "" > output/log.txt
+    > "${LOG_FILE}" # Cleans the file content.
 }
 
 display_instructions

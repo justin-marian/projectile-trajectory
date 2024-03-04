@@ -37,15 +37,15 @@ function projectile_trajectory(v0, alpha0)
     %   - alpha0: Launch angle (degrees)
     
     % Create output directory if it doesn't exist
-    if ~exist('output', 'dir')
-        mkdir('output');
+    if ~exist('../output', 'dir')
+        mkdir('../output');
     end
-    if ~exist('output/images', 'dir')
-        mkdir('output/images');
+    if ~exist('../output/images', 'dir')
+        mkdir('../output/images');
     end
 
     % Open log file for writing
-    log_file = fopen('output/log.txt', 'a');
+    log_file = fopen('../output/log.txt', 'a');
 
     % Physical parameters
     g = 9.80665;                % gravitational acceleration (m/s^2)
@@ -66,7 +66,7 @@ function projectile_trajectory(v0, alpha0)
     [t, vx, vy, x, y] = compute_trajectory(v0, alpha0, b1, b2, g, m);
 
     % Plot results and save plots
-    velocity_coordinates_position_folder = 'output/';
+    velocity_coordinates_position_folder = '../output/';
     if ~exist(velocity_coordinates_position_folder, 'dir')
         mkdir(velocity_coordinates_position_folder);
     end

@@ -1,17 +1,48 @@
-
 ============= PROJECTILE MOTION =============
-         Flight Time: 18.406816 s
-         Range: 0.235899 km
-         Maximum Altitude: 0.407174 km
-         Ascent Time: 6.908595 s
-         Descent Time: 11.498221 s
-         Heat Produced: 25.512452 kJ
+         Flight Time: 4.587242 s
+         Range: 0.426711 km
+         Maximum Altitude: 0.027452 km
+         Ascent Time: 1.995086 s
+         Descent Time: 2.592156 s
+         Heat Produced: 21.942012 kJ
 =============================================
 ============= PROJECTILE MOTION =============
-         Flight Time: 21.093500 s
-         Range: 0.112320 km
-         Maximum Altitude: 0.523344 km
-         Ascent Time: 7.423148 s
-         Descent Time: 13.670352 s
-         Heat Produced: 57.002295 kJ
+         Flight Time: 16.925352 s
+         Range: 0.652901 km
+         Maximum Altitude: 0.371898 km
+         Ascent Time: 5.946745 s
+         Descent Time: 10.978606 s
+         Heat Produced: 86.794148 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 15.004741 s
+         Range: 0.663687 km
+         Maximum Altitude: 0.298522 km
+         Ascent Time: 5.456270 s
+         Descent Time: 9.548472 s
+         Heat Produced: 64.740647 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 8.396854 s
+         Range: 0.237194 km
+         Maximum Altitude: 0.087792 km
+         Ascent Time: 3.811730 s
+         Descent Time: 4.585124 s
+         Heat Produced: 1.779518 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 13.460875 s
+         Range: 0.588239 km
+         Maximum Altitude: 0.238009 km
+         Ascent Time: 5.158236 s
+         Descent Time: 8.302640 s
+         Heat Produced: 32.575730 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 20.291521 s
+         Range: 0.212486 km
+         Maximum Altitude: 0.489251 km
+         Ascent Time: 7.204481 s
+         Descent Time: 13.087039 s
+         Heat Produced: 47.474001 kJ
 =============================================
