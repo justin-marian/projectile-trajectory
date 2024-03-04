@@ -15,15 +15,15 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 display_instructions() {
-    echo -e "===================================================================================="
-    echo -e "                          ${GREEN}Projectile Trajectory Simulation${NC}             "
-    echo -e "===================================================================================="
-    echo -e "         This script will run tests to simulate the trajectory of a projectile.     "
-    echo -e "      ${RED}Please ensure that Octave is installed and accessible from the command line.${NC}"
-    echo -e "  The script will generate random initial velocity and launch angle for each test.  "
-    echo -e "               After running the tests, you will have the option:                    "
+    echo -e "====================================================================================           "
+    echo -e "                          ${GREEN}Projectile Trajectory Simulation${NC}                        "
+    echo -e "====================================================================================           "
+    echo -e "         This script will run tests to simulate the trajectory of a projectile.                "
+    echo -e "      ${RED}Please ensure that Octave is installed and accessible from the command line.${NC}  "
+    echo -e "  The script will generate random initial velocity and launch angle for each test.             "
+    echo -e "               After running the tests, you will have the option:                              "
     echo -e "                       ${GREEN}execute test${NC}, ${BLUE}clean up log${NC}, or ${RED}exit${NC}."
-    echo -e "===================================================================================="
+    echo -e "====================================================================================           "
     echo
 }
 

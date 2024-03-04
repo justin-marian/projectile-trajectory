@@ -1,5 +1,4 @@
 % Projectile Trajectory Simulation
-% <https://en.wikipedia.org/wiki/Projectile_motion>
 % Author: Justin-Marian
 % Date: 2024
 % Description: This script simulates the trajectory of a projectile and
@@ -29,6 +28,8 @@
 % FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 % IN THE SOFTWARE.
 %
+% For more explanations go to Wiki link:
+% <https://en.wikipedia.org/wiki/Projectile_motion>
 function projectile_trajectory(v0, alpha0)
     % Simulate and analyze the trajectory of a projectile
     %
