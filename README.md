@@ -54,7 +54,7 @@ The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the *
 ## Additional Information
 
 - **Animation:** The animation provides a dynamic and visually engaging representation of the projectile's trajectory, allowing users to observe its movement in real-time with accuracy and clarity.
-- **Result Files:** Alongside the `log.txt` file, the script generates `png images` depicting the ***trajectory**, **velocity**, and position **curve** as functions of time, providing visual aids for analysis and presentation.
+- **Result Files:** Alongside the `log.txt` file, the script generates `png images` depicting the **trajectory**, **velocity**, and position **curve** as functions of time, providing visual aids for analysis and presentation.
 
 ## Usage
 
