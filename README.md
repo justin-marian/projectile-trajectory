@@ -6,54 +6,54 @@ The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the *
 
 <img src="./output/images/velocity_position_curve.png" alt="VELOCITY_POSITION_CURVE" width="49%" /> <img src="./output/images/trajectory_animation.png" alt="TRAJECTORY_ANIMATION" width="49%" />
 
+## Intended Use Cases
+
+- **Educational Purposes:** Serves as an invaluable resource for students to understand and visualize the principles of projectile motion in detailed physics education.
+- **Engineering Applications**: Offers insights and practical utility for engineers working on complex projects in areas such as ballistics and aerospace engineering.
+
 ## Key Features
+
+**Visualization:**
+
+- `Plotting`: Generates detailed plots of velocity components, trajectory, and motion laws to vividly visualize the projectile's motion over time for enhanced understanding.
+- `Animation`: Crafts an engaging animated visualization of the trajectory, offering a comprehensive and dynamic representation of the projectile's path through space.
+
+**Output and Analysis:**
+
+- `Log Files`: Logs the computed quantities and results for detailed further analysis, debugging, performance evaluation, and convenient future reference.
+- `Output Directory`: Methodically organizes the generated plots and detailed log files in a structured output directory for streamlined access and effective management.
 
 **Relevant Metrics:**
 
 - `Flight Time`: Computes the total time the projectile spends in the air.
 - `Range`: Calculates the horizontal distance traveled by the projectile.
 - `Maximum Altitude`: Determines the highest point reached by the projectile.
-- `Ascent and Descent Times`: Identifies the time taken for the projectile to ascend and descend, respectively.
+- `Ascent and Descent Times`: Identifies the time taken for the projectile to ascend and descend.
 - `Heat Produced`: Estimates the heat generated during the motion of the projectile.
 
 ```r
-============= PROJECTILE MOTION =============
-         Flight Time: 4.587242 s
-         Range: 0.426711 km
-         Maximum Altitude: 0.027452 km
-         Ascent Time: 1.995086 s
-         Descent Time: 2.592156 s
-         Heat Produced: 21.942012 kJ
-=============================================
-============= PROJECTILE MOTION =============
-         Flight Time: 16.925352 s
-         Range: 0.652901 km
-         Maximum Altitude: 0.371898 km
-         Ascent Time: 5.946745 s
-         Descent Time: 10.978606 s
-         Heat Produced: 86.794148 kJ
-=============================================
-.......
+   ============= PROJECTILE MOTION =============
+            Flight Time: 4.587242 s
+            Range: 0.426711 km
+            Maximum Altitude: 0.027452 km
+            Ascent Time: 1.995086 s
+            Descent Time: 2.592156 s
+            Heat Produced: 21.942012 kJ
+   =============================================
+   ============= PROJECTILE MOTION =============
+            Flight Time: 16.925352 s
+            Range: 0.652901 km
+            Maximum Altitude: 0.371898 km
+            Ascent Time: 5.946745 s
+            Descent Time: 10.978606 s
+            Heat Produced: 86.794148 kJ
+   =============================================
+   .......
 ```
-
-**Visualization:**
-
-- `Plotting`: Generates plots of velocity components, trajectory, and motion laws to visualize the projectile's motion over time.
-- `Animation`: Creates an animated visualization of the trajectory, providing a dynamic representation of the projectile's path.
-
-**Output and Analysis:**
-
-- `Log Files`: Logs the computed quantities and results for further analysis and reference.
-- `Output Directory`: Organizes the generated plots and log files in an output directory for easy access and management.
-
-## Intended Use Cases
-
-- **Educational Purposes:** Provides a tool for students to explore the principles of projectile motion in physics courses.
-- **Engineering Applications**: Offers insights for engineers working on projects involving projectile motion, such as ballistics and aerospace engineering.
 
 ## Additional Information
 
-- **Animation:** The animation provides a dynamic representation of the projectile's trajectory, allowing users to observe its movement in real-time.
+- **Animation:** The animation provides a dynamic and visually engaging representation of the projectile's trajectory, allowing users to observe its movement in real-time with accuracy and clarity.
 - **Result Files:** Alongside the `log.txt` file, the script generates `png images` depicting the ***trajectory**, **velocity**, and position **curve** as functions of time, providing visual aids for analysis and presentation.
 
 ## Usage
