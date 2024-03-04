@@ -4,11 +4,11 @@
 
 The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the **trajectory of a projectile** launched into the air under the influence of *gravity* and *air resistance*. It is a computational model that provides insights into the motion of a projectile, computing various quantities and visualizing the trajectory for analysis and understanding.
 
-![VELOCITY_POSTION_CURVE](./output/images/velocity_position_curve.png)
+<img src="./output/images/velocity_position_curve.png" alt="VELOCITY_POSITION_CURVE" width="49%" /> <img src="./output/images/trajectory_animation.png" alt="TRAJECTORY_ANIMATION" width="49%" />
 
 ## Key Features
 
-1). **Relevant Metrics**
+**Relevant Metrics:**
 
 - `Flight Time`: Computes the total time the projectile spends in the air.
 - `Range`: Calculates the horizontal distance traveled by the projectile.
@@ -16,23 +16,32 @@ The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the *
 - `Ascent and Descent Times`: Identifies the time taken for the projectile to ascend and descend, respectively.
 - `Heat Produced`: Estimates the heat generated during the motion of the projectile.
 
-```output
+```r
 ============= PROJECTILE MOTION =============
-         Flight Time: 18.406816 s
-         Range: 0.235899 km
-         Maximum Altitude: 0.407174 km
-         Ascent Time: 6.908595 s
-         Descent Time: 11.498221 s
-         Heat Produced: 25.512452 kJ
+         Flight Time: 4.587242 s
+         Range: 0.426711 km
+         Maximum Altitude: 0.027452 km
+         Ascent Time: 1.995086 s
+         Descent Time: 2.592156 s
+         Heat Produced: 21.942012 kJ
 =============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 16.925352 s
+         Range: 0.652901 km
+         Maximum Altitude: 0.371898 km
+         Ascent Time: 5.946745 s
+         Descent Time: 10.978606 s
+         Heat Produced: 86.794148 kJ
+=============================================
+.......
 ```
 
-2). **Visualization**
+**Visualization:**
 
 - `Plotting`: Generates plots of velocity components, trajectory, and motion laws to visualize the projectile's motion over time.
 - `Animation`: Creates an animated visualization of the trajectory, providing a dynamic representation of the projectile's path.
 
-3). **Output and Analysis**
+**Output and Analysis:**
 
 - `Log Files`: Logs the computed quantities and results for further analysis and reference.
 - `Output Directory`: Organizes the generated plots and log files in an output directory for easy access and management.
