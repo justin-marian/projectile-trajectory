@@ -63,4 +63,5 @@ The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the *
    - `1` to **run** the projectile simulation.
    - `2` to **clean** up the log file.
    - `3` to **exit** the program.
-2. **Call Function:** To simulate the trajectory of a projectile programmatically, use the `projectile_trajectory(v0, alpha0)` function, where `v0` is the **initial velocity** (*in m/s*) and `alpha0` is the **launch angle** (*in degrees*).
+2. **Call Function:** To simulate the trajectory of a projectile programmatically, use the:
+`projectile_trajectory(v0, alpha0)` function, where `v0` is the **initial velocity** (*in m/s*) and `alpha0` is the **launch angle** (*in degrees*).
