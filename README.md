@@ -1,6 +1,6 @@
 # Projectile Trajectory
 
-## Overview
+## Description
 
 The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the **trajectory of a projectile** launched into the air under the influence of *gravity* and *air resistance*. It is a computational model that provides insights into the motion of a projectile, computing various quantities and visualizing the trajectory for analysis and understanding.
 
