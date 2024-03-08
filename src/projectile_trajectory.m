@@ -37,16 +37,16 @@ function projectile_trajectory(v0, alpha0)
     %   - v0: Initial velocity (m/s)
     %   - alpha0: Launch angle (degrees)
     
-    % Create output directory if it doesn't exist
-    if ~exist('../output', 'dir')
-        mkdir('../output');
+    % Create out directory if it doesn't exist
+    if ~exist('../out', 'dir')
+        mkdir('../out');
     end
-    if ~exist('../output/images', 'dir')
-        mkdir('../output/images');
+    if ~exist('../images', 'dir')
+        mkdir('../images');
     end
 
     % Open log file for writing
-    log_file = fopen('../output/log.txt', 'a');
+    log_file = fopen('../out/log.txt', 'a');
 
     % Physical parameters
     g = 9.80665;                % gravitational acceleration (m/s^2)
@@ -66,15 +66,7 @@ function projectile_trajectory(v0, alpha0)
     % Compute trajectory
     [t, vx, vy, x, y] = compute_trajectory(v0, alpha0, b1, b2, g, m);
 
-    % Plot results and save plots
-    velocity_coordinates_position_folder = '../output/';
-    if ~exist(velocity_coordinates_position_folder, 'dir')
-        mkdir(velocity_coordinates_position_folder);
-    end
-
-    cd(velocity_coordinates_position_folder);
     plot_results(t, vx, vy, x, y);
-    cd('../');
 
     % Compute and display relevant quantities
     [tf, b, h, tu, tc, Q] = compute_quantities(t, vx, vy, x, y, v0, m, g);
@@ -114,7 +106,6 @@ function [t, vx, vy, x, y] = compute_trajectory(v0, alpha0, b1, b2, g, m)
     
     t0 = 0; tf = 2 * v0 / g * sind(alpha0);
     N = 1000;   % number of time instances
-
     t = linspace(t0, tf, N);
     dt = t(2) - t(1);
 
@@ -182,9 +173,8 @@ function plot_results(t, vx, vy, x, y)
     title('Ballistic Curve');
 
     % Save the plot with larger spaces
-    cd('./images');
+    cd('../images')
     saveas(gcf, 'velocity_position_curve.png');
-    cd('../');
 
     % Set axis to be equal and tight
     axis equal;
@@ -239,7 +229,7 @@ function plot_trajectory_animation(x, y, vx, vy)
     vel_text = text(vel_text_x, vel_text_y, '', 'Color', 'red', 'HorizontalAlignment', 'right');
 
     % Initialize trail
-    trail_length = 50;
+    trail_length = 25;
     trail_x = zeros(trail_length, 1);
     trail_y = zeros(trail_length, 1);
     trail = plot(trail_x, trail_y, 'LineWidth', 3);
@@ -254,21 +244,20 @@ function plot_trajectory_animation(x, y, vx, vy)
 
         % Update target position
         if i == length(x)
-            set(target, 'XData', target_x, 'YData', target_y);
+            set(target, 'XData', target_x, 'YData', target_y, 'Color', [1., 0.5, 0.01]);
         end
-
+ 
         % Update trail
         trail_x = [trail_x(2:end); x(i) / 1e3];
         trail_y = [trail_y(2:end); y(i) / 1e3];
-        set(trail, 'XData', trail_x, 'YData', trail_y, 'Color', color_scale(i)*[1., 0.1, 0.01]);
+        set(trail, 'XData', trail_x, 'YData', trail_y, 'Color', color_scale(i)*[1., 0.01, 0.01]);
 
         drawnow;
-        pause(0.0001);
+        pause(1e-3);
     end
 
-    cd('./output/images/');
     saveas(gcf, 'trajectory_animation.png');
-    cd('../../');
+    cd('../')
 end
 
 function [tf, b, h, tu, tc, Q] = compute_quantities(t, vx, vy, x, y, v0, m, ~)

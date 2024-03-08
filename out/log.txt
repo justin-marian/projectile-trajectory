@@ -62,3 +62,43 @@
          Descent Time: 15.228911 s
          Heat Produced: 108.910121 kJ
 =============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 16.045201 s
+         Range: 0.542294 km
+         Maximum Altitude: 0.329260 km
+         Ascent Time: 5.958306 s
+         Descent Time: 10.086895 s
+         Heat Produced: 38.868788 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 16.045201 s
+         Range: 0.542294 km
+         Maximum Altitude: 0.329260 km
+         Ascent Time: 5.958306 s
+         Descent Time: 10.086895 s
+         Heat Produced: 38.868788 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 11.499830 s
+         Range: 0.422881 km
+         Maximum Altitude: 0.169371 km
+         Ascent Time: 4.793348 s
+         Descent Time: 6.706482 s
+         Heat Produced: 9.239021 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 17.375871 s
+         Range: 0.206378 km
+         Maximum Altitude: 0.365118 km
+         Ascent Time: 6.748303 s
+         Descent Time: 10.627567 s
+         Heat Produced: 17.363008 kJ
+=============================================
+============= PROJECTILE MOTION =============
+         Flight Time: 16.045201 s
+         Range: 0.542294 km
+         Maximum Altitude: 0.329260 km
+         Ascent Time: 5.958306 s
+         Descent Time: 10.086895 s
+         Heat Produced: 38.868788 kJ
+=============================================

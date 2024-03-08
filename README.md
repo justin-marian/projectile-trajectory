@@ -4,7 +4,14 @@
 
 The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the **trajectory of a projectile** launched into the air under the influence of *gravity* and *air resistance*. It is a computational model that provides insights into the motion of a projectile, computing various quantities and visualizing the trajectory for analysis and understanding.
 
-<img src="./output/images/velocity_position_curve.png" alt="VELOCITY_POSITION_CURVE" width="49%" /> <img src="./output/images/trajectory_animation.png" alt="TRAJECTORY_ANIMATION" width="49%" />
+<p align="center">
+  <a href="https://github.com/justin-marian/projectile-trajectory/tree/main/demo/simulation.mp4" style="width: 75%; height: 100%;" >
+    <img src="./images/velocity_position_curve.png" alt="VELOCITY_POSITION_CURVE" width="49%" />
+  </a>
+  <a href="https://github.com/justin-marian/projectile-trajectory/tree/main/demo/simulation.mp4" style="width: 75%; height: 100%;" >
+    <img src="./images/trajectory_animation.png" alt="TRAJECTORY_ANIMATION" width="49%" />
+  </a>
+</p>
 
 ## Intended Use Cases
 
@@ -58,13 +65,13 @@ The Projectile Trajectory is a `MATLAB/Octave` script designed to simulate the *
 
 ## Usage
 
-1. **Run Script:** Execute the `test_projectile.sh` script in your terminal.
-**Options:**
-   - `1` to **run** the projectile simulation.
-   - `2` to **clean** up the log file.
-   - `3` to **exit** the program.
-2. **Call Function:** To simulate the trajectory of a projectile programmatically, use the:
+- **First, Chnage Directory TO `src`** and be inside of it, (*for saving `png` files inside of `images` directory*).
+- **Run Script:** Execute the `test_projectile.sh` script in your terminal. You have a list of **3 options**.
+  - `1` to **run** the projectile simulation.
+  - `2` to **clean** up the log file.
+  - `3` to **exit** the program.
 
-   - `projectile_trajectory(v0, alpha0)` function, where:
-     - `v0` is the **initial velocity** (*in m/s*)
-     - `alpha0` is the **launch angle** (*in degrees*).
+- **Call Function:** To simulate the trajectory of a projectile programmatically, use the:
+  - `projectile_trajectory(v0, alpha0)` function, where:
+    - `v0` is the **initial velocity** (*in m/s*)
+    - `alpha0` is the **launch angle** (*in degrees*).

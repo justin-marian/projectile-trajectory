@@ -4,8 +4,8 @@
 chmod 0700 /run/user/1000/
 
 BASE_DIR=../
-OUTPUT_DIR="$BASE_DIR/output"
-IMAGES_DIR="$OUTPUT_DIR/images"
+OUTPUT_DIR="$BASE_DIR/out"
+IMAGES_DIR="$BASE_DIR/images"
 LOG_FILE="$OUTPUT_DIR/log.txt"
 
 # Define colors
@@ -29,7 +29,7 @@ display_instructions() {
 
 run_test() {
     num_tests=1
-    mkdir -p ../output
+    mkdir -p ../out
 
     echo -e "${GREEN}Running test...${NC}"
 
